@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydra App: History</title>
     <link href="index.css" rel="stylesheet" />
-</head>
-<body class="bg-blue-950 font-roboto-mono flex min-h-screen items-center justify-center">
-    <header class="grid grid-cols-1 gap-5 justify-center mb-6 text-white md:text-6xl text-4xl">
-        <h1 class="flex">hydra-app<span class="animate-fade-down animate-infinite animate-duration-[2500ms] animate-ease-in-out">📝</span></h1>
-        <nav class="flex justify-center md:text-2xl text-xl underline ">
+    <script type="module" src="js/history.js"></script>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body
+    class="bg-blue-950 font-roboto-mono flex min-h-screen items-center justify-center"
+  >
+    <main>
+      <header
+        class="grid grid-cols-1 gap-5 justify-center mb-6 text-white md:text-6xl text-4xl"
+      >
+        <h1 class="flex">
+          hydra-app<span
+            class="animate-fade-down animate-twice animate-duration-[2500ms] animate-ease-in-out"
+            >📝</span
+          >
+        </h1>
+        <nav class="flex justify-center md:text-2xl text-xl underline">
           <a class="hover:text-[#60A5FA]" href="index.html">Home</a>
         </nav>
       </header>
-</body>
+      <div class="relative overflow-x-auto p-2">
+      <table class="text-white border-2 w-full text-center">
+        <thead>
+            <tr class="bg-blue-900 md:text-lg border-b-2">
+                <th scope="col" class="px-2 py-2 border-r-2">Date</th>
+                <th scope="col" class="px-2 py-2">Glasses</th>
+            </tr>
+        </thead>
+        <tbody id="table--js" class="md:text-lg">
+        </tbody>
+      </table>
+    </div>
+    </main>
+  </body>
 </html>
