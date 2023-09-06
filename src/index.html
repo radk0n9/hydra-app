@@ -9,18 +9,32 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="interaction.js"></script>
+    <link href="index.css" rel="stylesheet" />
     <title>Hydra App</title>
-    <link href="./index.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico">
+    <meta name="decritption" content="Hydra App">
+    <meta property="og:title" content="Hydra App">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
   </head>
   <body class="bg-blue-950 font-roboto-mono flex min-h-screen items-center justify-center">
     <main>
-      <header class="flex justify-center text-white text-4xl">
-        <h1 class="m-10">hydra-app</h1>
+      <header class="grid grid-cols-1 gap-5 justify-center mb-6 text-white md:text-6xl text-4xl">
+        <h1 class="flex">hydra-app<span class="animate-fade-down animate-infinite animate-duration-[2500ms] animate-ease-in-out">💧</span></h1>
+        <nav class="flex justify-center md:text-2xl text-xl underline ">
+          <a class="hover:text-[#60A5FA]" href="history.html">History</a>
+        </nav>
       </header>
       <article class="flex items-center justify-center">
-        <p class="text-black md:text-9xl text-7xl flex justify-center items-center absolute">0</p>
+        <p class="countGlass--js text-black md:text-9xl text-7xl flex justify-center items-center absolute"> </p>
         <img class="md:h-80 h-60" src="./glass.svg"><img/>
       </article>
+      <div class="grid grid-cols-1 justify-items-center gap-6 mt-10 md:text-xl text-md font-semibold">
+        <button class="buttonAdd--js border-2 p-2 min-w-[15rem] rounded-2xl bg-green-700 text-gray-300 hover:bg-green-400 hover:text-green-700 transition-colors ease-in-out duration-300">add a glass</button>
+        <button class="buttonRemove--js border-2 p-2 min-w-[15rem] rounded-2xl bg-red-700 text-gray-300 hover:bg-red-400 hover:text-red-700 transition-colors ease-in-out duration-300">remove a glass</button>
+        <p class="warningMessage--js text-white text-center md:max-w-[25rem] max-w-[15rem]"> </p>
+      </div>
     </main>
   </body>
 </html>

@@ -7,8 +7,12 @@ module.exports = {
     fontFamily: {
       "roboto-mono": ['Roboto Mono', "monospace"],
     },
-    extend: {},
+    extend: {
+      
+    },
   },
-  plugins: [],
+  plugins: [
+      require('tailwindcss-animated'),
+  ],
 }
 
